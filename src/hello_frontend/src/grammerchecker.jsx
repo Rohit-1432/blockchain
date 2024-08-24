@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { hello_backend } from 'declarations/hello_backend';
+import React, { useState } from 'react';
+import axios from 'axios';
 
-
-const App = () => {
+const GrammarChecker = () => {
   const [text, setText] = useState('');
   const [correctedText, setCorrectedText] = useState('');
   const [error, setError] = useState('');
@@ -48,6 +47,4 @@ const App = () => {
   );
 };
 
-
-
-export default App;
+export default GrammarChecker;
